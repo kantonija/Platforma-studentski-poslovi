@@ -41,12 +41,3 @@ Fokus projekta je na:
 ## Napomena
 
 Projekt je izrađen u edukativne svrhe u sklopu kolegija **Korisnička sučelja**.
-
----
-
-## 🔮 Moguća poboljšanja
-
-* Sustav preporuka poslova
-* Notifikacije za nove oglase
-* Chat između studenta i poslodavca
-* Integracija s vanjskim servisima

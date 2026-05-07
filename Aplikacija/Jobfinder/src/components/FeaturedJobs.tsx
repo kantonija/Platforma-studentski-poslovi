@@ -6,9 +6,9 @@ const jobs = [
     id: 1,
     title: 'Frontend Developer (Student)',
     company: 'TechStart d.o.o.',
-    location: 'Zagreb',
+    location: 'Mostar',
     type: 'Part-time',
-    salary: '800-1200 EUR',
+    salary: '1000-1200 KM',
     logo: '🚀',
     tags: ['React', 'TypeScript', 'Fleksibilno'],
   },
@@ -16,9 +16,9 @@ const jobs = [
     id: 2,
     title: 'Konobar/Konobarica',
     company: 'Café Central',
-    location: 'Split',
+    location: 'Široki Brijeg',
     type: 'Part-time',
-    salary: '400-600 EUR',
+    salary: '800-1000 KM',
     logo: '☕',
     tags: ['Vikend', 'Noćna smjena', 'Napojnice'],
   },
@@ -28,7 +28,7 @@ const jobs = [
     company: 'Digital Agency Pro',
     location: 'Remote',
     type: 'Part-time',
-    salary: '600-900 EUR',
+    salary: '1200-1500 KM',
     logo: '📱',
     tags: ['Social Media', 'Content', 'Remote'],
   },
@@ -36,9 +36,9 @@ const jobs = [
     id: 4,
     title: 'Tutor Matematike',
     company: 'EduCenter',
-    location: 'Rijeka',
+    location: 'LJubuški',
     type: 'Freelance',
-    salary: '20-30 EUR/h',
+    salary: '10-15 KM/h',
     logo: '📚',
     tags: ['Fleksibilno', 'Online', 'Studenti'],
   },
@@ -46,9 +46,9 @@ const jobs = [
     id: 5,
     title: 'Grafički Dizajner',
     company: 'Creative Studio',
-    location: 'Zagreb',
+    location: 'Mostar',
     type: 'Part-time',
-    salary: '700-1000 EUR',
+    salary: '700-1000 KM',
     logo: '🎨',
     tags: ['Figma', 'Adobe', 'Portfolio'],
   },
@@ -58,7 +58,7 @@ const jobs = [
     company: 'SupportHub',
     location: 'Remote',
     type: 'Part-time',
-    salary: '500-700 EUR',
+    salary: '500-700 KM',
     logo: '💬',
     tags: ['Remote', 'Engleski', 'Chat'],
   },
@@ -87,7 +87,7 @@ export function FeaturedJobs() {
               className="bg-white rounded-xl p-6 border border-gray-200 hover:shadow-xl hover:border-blue-300 transition cursor-pointer"
             >
               <div className="flex justify-between items-start mb-4">
-                <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center text-2xl">
+                <div className="w-12 h-12 bg-linear-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center text-2xl">
                   {job.logo}
                 </div>
                 <button className="p-2 hover:bg-gray-100 rounded-lg transition">

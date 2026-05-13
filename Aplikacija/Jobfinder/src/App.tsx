@@ -7,6 +7,7 @@ import { FeaturedJobs } from './components/FeaturedJobs';
 import { Footer } from './components/Footer';
 import { useParams } from 'react-router-dom';
 import './App.scss'
+import { LoginForm } from './components/auth/login';
 
 function HomePage({ onShowLogin, onShowRegister }: { onShowLogin: () => void; onShowRegister: () => void }) {
   return (
@@ -119,6 +120,12 @@ export default function App() {
 
   return (
     <Router>
+      {showLogin && (
+        <LoginForm
+          onClose={handleCloseAuth}
+          onSwitchToRegister={handleShowRegister}
+        />
+      )}
       <Routes>
         <Route path="/" element={<HomePage onShowLogin={handleShowLogin} onShowRegister={handleShowRegister} />} />
         <Route path="/jobs" element={<JobListPage onShowLogin={handleShowLogin} onShowRegister={handleShowRegister} />} />

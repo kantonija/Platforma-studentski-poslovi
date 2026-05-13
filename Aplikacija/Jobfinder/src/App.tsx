@@ -9,6 +9,7 @@ import { useParams } from 'react-router-dom';
 import './App.scss'
 import { LoginForm } from './components/auth/login';
 import { RegisterForm } from './components/auth/register';
+import { EmployerDashboard } from './components/employer/EmployerDashboard';
 
 function HomePage({ onShowLogin, onShowRegister }: { onShowLogin: () => void; onShowRegister: () => void }) {
   return (
@@ -75,10 +76,8 @@ function EmployerDashboardPage({ onShowLogin, onShowRegister }: { onShowLogin: (
     <div className="min-h-screen flex flex-col">
       <Header onShowLogin={onShowLogin} onShowRegister={onShowRegister} />
       <main className="flex-1">
-        <div className="container mx-auto px-4 py-12">
-          <h1 className="text-4xl font-bold text-gray-900">Dashboard poslodavca</h1>
-          <p className="text-gray-600 mt-4">Employer dashboard page will be implemented here</p>
-        </div>
+        <EmployerDashboard />
+        
       </main>
       <Footer />
     </div>

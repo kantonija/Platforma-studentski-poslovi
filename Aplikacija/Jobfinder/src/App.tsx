@@ -8,6 +8,7 @@ import { Footer } from './components/Footer';
 import { useParams } from 'react-router-dom';
 import './App.scss'
 import { LoginForm } from './components/auth/login';
+import { RegisterForm } from './components/auth/register';
 
 function HomePage({ onShowLogin, onShowRegister }: { onShowLogin: () => void; onShowRegister: () => void }) {
   return (
@@ -124,6 +125,12 @@ export default function App() {
         <LoginForm
           onClose={handleCloseAuth}
           onSwitchToRegister={handleShowRegister}
+        />
+      )}
+      {showRegister && (
+        <RegisterForm
+          onClose={handleCloseAuth}
+          onSwitchToLogin={handleShowLogin}
         />
       )}
       <Routes>
